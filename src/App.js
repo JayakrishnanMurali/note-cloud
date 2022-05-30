@@ -75,6 +75,7 @@ function App() {
           target="_blank"
           rel="noreferrer"
           href="https://github.com/jayakrishnanmurali/"
+          style={{ color: `${currentSong.color[0]}` }}
         >
           Jayakrishnan
         </a>
