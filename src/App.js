@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
-import Player from "./components/Player";
-import Song from "./components/Song";
-import "./styles/app.scss";
-import data from "./playlist";
+import { useRef, useState } from "react";
 import Library from "./components/Library";
 import Nav from "./components/Nav";
+import Player from "./components/Player";
+import Song from "./components/Song";
+import data from "./playlist";
+import "./styles/app.scss";
 
 function App() {
   const [songs, setSongs] = useState(data());
@@ -32,6 +32,7 @@ function App() {
     duration: 0,
     animationPercentage: 0,
   });
+
   const songEndHandler = async () => {
     let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
     await setCurrentSong(songs[(currentIndex + 1) % songs.length]);

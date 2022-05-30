@@ -18,6 +18,7 @@
   }
   p {
     padding: 1rem;
+    color: rgb(180, 179, 179);
   }
 }
 
@@ -25,6 +26,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgb(180, 179, 179);
   width: 30%;
   padding: 1rem;
   svg {
@@ -56,7 +58,7 @@ input[type="range"]::-moz-slider-thumb {
 }
 
 .animate-track {
-  background: rgb(204, 204, 204);
+  background: rgb(134, 134, 134);
   width: 100%;
   height: 100%;
   position: absolute;
